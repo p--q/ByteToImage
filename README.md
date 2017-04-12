@@ -1,6 +1,6 @@
 # ByteToImage
 
-bytetoimage.py converts the image of addon.xcu of LibreOffice expressed in hexadecimal byte sequence into bmp image.
+bytetoimage.py converts the image of Addon.xcu of LibreOffice expressed in hexadecimal byte sequence into bmp image.
 
 Imagetobyte.py converts a bmp image to a hexadecimal byte string.
 
