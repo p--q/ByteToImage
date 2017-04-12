@@ -13,10 +13,10 @@ def main():
         sys.exit()
     os.chdir(fd)  
     for imagefile in glob.iglob("*.*"):
-        imagetype = imghdr.what(imagefile)
+        imagetype = imghdr.what(imagefile)  # 画像の種類の取得。
         if imagetype:
             with open(imagefile,"rb") as fp:
-                hexdata = binascii.b2a_hex(fp.read()) 
+                hexdata = binascii.b2a_hex(fp.read())  # 十六進法のバイト列に変換。
                 print("\n" + fp.name)
                 print(hexdata)
 if __name__ == "__main__":

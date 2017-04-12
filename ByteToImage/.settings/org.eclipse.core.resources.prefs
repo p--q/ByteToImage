@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/bmptopng.py=utf-8
 encoding//src/bytetoimage.py=utf-8
 encoding//src/imagetobyte.py=utf-8
+encoding//src/topng.py=utf-8
