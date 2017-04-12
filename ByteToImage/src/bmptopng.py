@@ -25,7 +25,7 @@ def main():
         if imagetype == "bmp":
             name,ext = os.path.splitext(imagefile)
             args = ["convert"]
-            args.extend(["-transparent",'magenta'])  # Magendaは透明する。
+            args.extend(["-transparent",'magenta'])  # Magendaは透明にする。
             args.extend([imagefile,os.path.join(output,name + ".png")])
             subprocess.run(args) 
 if __name__ == "__main__":
