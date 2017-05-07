@@ -20,7 +20,8 @@ def main():
         imagetype = imghdr.what(imagefile)
         if imagetype:
             img = Image.open(imagefile)
-            name,ext = os.path.splitext(imagefile)
+            # name,ext = os.path.splitext(imagefile)
+            name,_ = os.path.splitext(imagefile)
             img.save(os.path.join(output,name + ".png"),"png")
 if __name__ == "__main__":
     sys.exit(main())
